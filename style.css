@@ -11,20 +11,26 @@ body {
 .section1 {
     flex-grow: 1; /* This ensures that the nav element takes up the remaining space */
     text-align: left; 
-    padding: 40px;
+    margin-left: 20px;
+    padding: 30px;
     margin-top: 80px;
     background-color: #ffffff;
     display: flex;
     flex-direction: row;
 }
 
-.section2{
-    background-color: #75c3ff;
-    color: #6286f4;
-    text-align: left;
-    padding: 40px;
-   
+.section11 {
+    flex-grow: 1; /* This ensures that the nav element takes up the remaining space */
+    text-align: center; 
+    padding: 30px;
+    margin-top: 80px;
+    background-color: #ffffff;
+    
 }
+
+
+
+
 
 .section3 {
     flex-grow: 1; /* This ensures that the nav element takes up the remaining space */
@@ -33,23 +39,19 @@ body {
     background-color: #140c7d;
 }
 
-header {
-    background-color: #4ba7eb;
-    color: #fff;
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 h1 {
     color: #140c7d;
 }
 
-.logo img {
-    height: 50px; /* Adjust the height as needed */
-    width: auto;
-    margin-left: 20px; /* Adjust margin as needed */
+
+
+header {
+    background-color: #4ba7eb;
+    color: #fff;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .active{
@@ -71,6 +73,22 @@ h1 {
     text-decoration: none;
     border-radius: 5px;
 }
+
+.learnbutton {
+    color: #ffffff;
+    background-color: #0006a8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.learnbutton:hover {
+    background-color: #56b3fb;
+    color: #ffffff;
+}
+
 
 .button:hover{
     background-color: #fff;
@@ -163,6 +181,73 @@ footer {
     width: 50%; /* Adjust as needed */
     height: auto;
     margin-right: 20px; /* Spacing between image and text */
+    
+    .logo img {
+        height: 50px;
+        width: auto;
+        margin-left: 20px;
+    }
+
 }
+
+.doggie {
+
+      /* Adjust the border-radius value to control the roundness */
+      border-radius: 20px; /* This value makes the image corners rounded */
+
+      
+      border: 10px solid #2e7eff;
+      margin-right: 20px;
+      padding: 0;
+}
+
+.section2{
+    flex-grow: 1; /* This ensures that the nav element takes up the remaining space */
+    text-align: left; 
+    margin-left: 20px;
+    padding: 30px;
+    margin-top: 10px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+
 
 
